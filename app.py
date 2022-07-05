@@ -2,7 +2,7 @@ from decouple import config as env_config
 from flask import Flask
 from views import terms_bp
 
-SECRET_KEY = env_config("SECRET_KEY")
+SECRET_KEY = "secret_that_is_no_secret"
 
 
 app = Flask(__name__)
