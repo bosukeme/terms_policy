@@ -12,5 +12,8 @@ app.secret_key = SECRET_KEY
 app.register_blueprint(terms_bp)
 
 
+
+
+
 if __name__=='__main__':
     app.run(port= 5000, debug=True)

@@ -17,6 +17,10 @@ class Policy(Resource):
         return Response(response=render_template('policy.html'))
 
 
+class CallBack(Resource):
+    def get(self):
+        return Response(response=render_template('call_back.html'))
+
 
 
 
@@ -27,3 +31,4 @@ api = Api(terms_bp)
 api.add_resource(Home, '/')
 api.add_resource(Terms, "/terms")
 api.add_resource(Policy, "/policy")
+api.add_resource(CallBack, "/callback")
